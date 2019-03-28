@@ -4,16 +4,23 @@ import {
   Navbar,
   Nav,
   Form,
-  FormControl,
-  Button,
   Jumbotron,
   Container,
-  Card
+  Card,
+  Image,
+  Button
 } from "react-bootstrap";
+/*
+ * - launchText
+ * - title
+ * - body
+ */
+import { NewModal } from "./modalComponent";
+import { ListOfSyrups } from "./ListOfSyrups";
+
 /**
  * reusable nonexportable functions
  **/
-
 
 /***
  * Exported Functions used
@@ -27,11 +34,13 @@ export function SSNav(props) {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="#home">About Us</Nav.Link>
-          <Nav.Link href="#syrups">List of Syrups</Nav.Link>
-          <Nav.Link href="purchase"> How to Purchase </Nav.Link>
+          <Nav.Link href="#syrups" ListOfSyrups>
+            List of Syrups
+          </Nav.Link>
+          <Nav.Link href="#purchase"> How to Purchase </Nav.Link>
         </Nav>
         <Form inline>
-          <Button onClick={props.handleEvent} variant="outline-success">Login</Button>
+          <Button variant="outline-success">Login</Button>
         </Form>
       </Navbar.Collapse>
     </Navbar>
@@ -39,8 +48,9 @@ export function SSNav(props) {
 }
 export function SSJumbotron(props) {
   return (
-    <Jumbotron fluid>
+    <Jumbotron fluid style={{ paddingBottom: 200 }}>
       <Container>
+        <br />
         <h1 style={{ textAlign: "center" }}> Southside Syrups </h1>
         <p style={{ textAlign: "center" }}>
           <br />
@@ -52,6 +62,7 @@ export function SSJumbotron(props) {
     </Jumbotron>
   );
 }
+
 export function CreateCard(props) {
   return (
     <Card style={{ width: "18rem" }}>
@@ -64,4 +75,7 @@ export function CreateCard(props) {
       </Card.Body>
     </Card>
   );
+}
+export function LargeImg(props) {
+  return <Image src={props.src} fluid />;
 }

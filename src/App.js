@@ -3,26 +3,27 @@ import { Container, CardGroup } from "react-bootstrap";
 import "./App.css";
 import { SSNav, SSJumbotron, CreateCard } from "./components";
 
-/**
- * createCard
- * - Title
- * - Subtitle
- * - text
+/*
+ * - launchText
+ * - title
+ * - body
  */
+import { NewModal } from "./modalComponent";
+
 class App extends Component {
   render() {
     return (
       <div>
         <Container>
           <div className="App">
-            <SSNav/>
+            <SSNav />
             <SSJumbotron />
-            <h2>insert some big image here</h2>
             <CardGroup>
               <CreateCard
                 title="About Us"
                 subtitle="Based locally in savannah"
                 text="some example text"
+                body="..."
               />
               <CreateCard
                 title="Buy our syrups"
