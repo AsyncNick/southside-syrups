@@ -1,13 +1,13 @@
 {
   "main.css": "/southside-syrups/static/css/main.54dc4293.chunk.css",
-  "main.js": "/southside-syrups/static/js/main.256502af.chunk.js",
-  "main.js.map": "/southside-syrups/static/js/main.256502af.chunk.js.map",
+  "main.js": "/southside-syrups/static/js/main.15e24a1c.chunk.js",
+  "main.js.map": "/southside-syrups/static/js/main.15e24a1c.chunk.js.map",
   "runtime~main.js": "/southside-syrups/static/js/runtime~main.61c4019c.js",
   "runtime~main.js.map": "/southside-syrups/static/js/runtime~main.61c4019c.js.map",
-  "static/js/2.6c495b70.chunk.js": "/southside-syrups/static/js/2.6c495b70.chunk.js",
-  "static/js/2.6c495b70.chunk.js.map": "/southside-syrups/static/js/2.6c495b70.chunk.js.map",
+  "static/js/2.963d0a83.chunk.js": "/southside-syrups/static/js/2.963d0a83.chunk.js",
+  "static/js/2.963d0a83.chunk.js.map": "/southside-syrups/static/js/2.963d0a83.chunk.js.map",
   "index.html": "/southside-syrups/index.html",
-  "precache-manifest.96749ef83ab6a7afd3991b6d16e58aec.js": "/southside-syrups/precache-manifest.96749ef83ab6a7afd3991b6d16e58aec.js",
+  "precache-manifest.99a76b20f7d6465c1bd03c6ea56a0d71.js": "/southside-syrups/precache-manifest.99a76b20f7d6465c1bd03c6ea56a0d71.js",
   "service-worker.js": "/southside-syrups/service-worker.js",
   "static/css/main.54dc4293.chunk.css.map": "/southside-syrups/static/css/main.54dc4293.chunk.css.map"
 }
