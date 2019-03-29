@@ -15,8 +15,8 @@ import {
  * - title
  * - body
  */
-import { NewModal } from "./modalComponent";
-import { ListOfSyrups } from "./ListOfSyrups";
+// import { NewModal } from "./modalComponent";
+// import { ListOfSyrups } from "./ListOfSyrups";
 
 /**
  * reusable nonexportable functions
@@ -34,9 +34,7 @@ export function SSNav(props) {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="#home">About Us</Nav.Link>
-          <Nav.Link href="#syrups" ListOfSyrups>
-            List of Syrups
-          </Nav.Link>
+          <Nav.Link href="#syrups">List of Syrups</Nav.Link>
           <Nav.Link href="#purchase"> How to Purchase </Nav.Link>
         </Nav>
         <Form inline>
@@ -48,7 +46,7 @@ export function SSNav(props) {
 }
 export function SSJumbotron(props) {
   return (
-    <Jumbotron fluid style={{ paddingBottom: 200 }}>
+    <Jumbotron fluid style={{ paddingBottom: 300 }}>
       <Container>
         <br />
         <h1 style={{ textAlign: "center" }}> Southside Syrups </h1>

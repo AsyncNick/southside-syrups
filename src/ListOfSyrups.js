@@ -1,6 +1,19 @@
 //ListOfSyrups.js
 import React from "react";
+import Syrups from './syrup_data.json';
 
-export function ListOfSyrups(props) {
-  return <h1 id="syrups">test</h1>;
+function list (title, objects) {
+  var sentence;
+  for (let i = 0; i < objects.length; i++) {
+    sentence += <li> + objects[i] + </li>
+  }
+  return (sentence);
+}
+
+export function ListOfSyrups (props) {
+  return (
+    <ul>
+    {list(props.title, Syrups)}
+    </ul>
+  )
 }

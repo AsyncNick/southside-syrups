@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { Container, CardGroup } from "react-bootstrap";
-import "./App.css";
 import { SSNav, SSJumbotron, CreateCard } from "./components";
+//import { ListOfSyrups } from './ListOfSyrups';
 
+import "./App.css";
 /*
  * - launchText
  * - title
  * - body
  */
-import { NewModal } from "./modalComponent";
+//import { NewModal } from "./modalComponent";
 
 class App extends Component {
   render() {
