@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/southside-syrups/precache-manifest.1b3b704e2a3aa56d8afa93e105f94a34.js"
+  "/southside-syrups/precache-manifest.f308b3469e8da89d323f5a68fbcf6ddf.js"
 );
 
 workbox.clientsClaim();
