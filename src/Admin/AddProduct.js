@@ -4,15 +4,14 @@
   - then that needs to update in the main option
 **/
 import React, { Component } from 'react';
-import { gen, syrupList, SSNav } from '../components';
 import {Container, Form, Button} from 'react-bootstrap';
+
 import App from '../App';
 
 //id, name, price, oz, inStock
-function AddProduct () {
+export default function AddProduct (props) {
   return (
   <div>
-    <SSNav/>
     <h1>Admin</h1>
     <Container>
       <Form>
@@ -40,4 +39,3 @@ function AddProduct () {
   </div>
     )
 }
-export default AddProduct;

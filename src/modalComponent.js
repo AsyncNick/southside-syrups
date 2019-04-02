@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
 
-import AddProduct from "./Admin/AddProduct";
+import AddProduct from "./admin/AddProduct";
 
 export class NewModal extends Component {
   constructor(props, context) {
