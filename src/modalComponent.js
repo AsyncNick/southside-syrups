@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
+
+import AddProduct from "./Admin/AddProduct";
 
 export class NewModal extends Component {
   constructor(props, context) {
@@ -7,7 +10,7 @@ export class NewModal extends Component {
 
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
-
+    this.handlePurchase = this.handlePurchase.bind(this);
     this.state = {
       show: false
     };
@@ -20,11 +23,20 @@ export class NewModal extends Component {
   handleShow() {
     this.setState({ show: true });
   }
+  handlePurchase() {
+    return (
+      <Router>
+        <div>
+          <Route path="./AddProduct" component={AddProduct} />
+        </div>
+      </Router>
+    );
+  }
   render() {
     const props = this.props;
     return (
       <>
-        <Button variant="primary" onClick={this.handleShow}>
+        <Button className="yellow" onClick={this.handleShow}>
           {props.launchText}
         </Button>
         <Modal show={this.state.show} onHide={this.handleClose}>
@@ -33,6 +45,9 @@ export class NewModal extends Component {
           </Modal.Header>
           <Modal.Body>{props.body}</Modal.Body>
           <Modal.Footer>
+            <Button variant="primary" onClick={this.handlePurchase}>
+              Purchase
+            </Button>
             <Button variant="secondary" onClick={this.handleClose}>
               Close
             </Button>

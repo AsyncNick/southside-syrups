@@ -1,6 +1,168 @@
+/***************
+* - App.css
+***************/
+/* helpers */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+.yellow,
+.yellow::after,
+.yellow:active {
+  background-color: #f9f6b6;
+  color: #101820;
+}
+
+/* keyframes */
+@-webkit-keyframes SlideUp {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes SlideUp {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes SlideDown {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes SlideDown {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes SlideLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes SlideLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes SlideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes SlideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes Ripple {
+  0% {
+    transform: ;
+  }
+}
+/**
+** main css
+**/
 .App,
 body {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   background-color: ; /*#CEDFE9; /* blue color */
+}
+.Login {
+  position: fixed;
+}
+/**
+** - iPhone
+**/
+@media only screen and (max-width: 720px) {
+  body {
+    animation: 3s ease-out 0s 1 SlideUp;
+  }
+  .jumbo,
+  .App,
+  body {
+    margin-top: 20px;
+    background-position: center;
+    background-color: #f9f6b6;
+  }
+  /* .jumbo {
+    animation: 1s ease-out 0s 1 SlideUp;
+  } */
+  .singleCard {
+    margin-left: 25px;
+    margin-right: -100px;
+  }
+  .nav {
+    background-color: #fbf59b;
+  }
+  .SyrupUL {
+  }
+  .syrupLI {
+  }
+  /* #cardOne,
+  #cardThree {
+    -webkit-animation: 3s ease-out 0s 1 SlideRight;
+    animation: 3s ease-out 0s 1 SlideRight;
+  }
+  #cardTwo {
+    -webkit-animation: 3s ease-out 0s 1 SlideLeft;
+    animation: 3s ease-out 0s 1 SlideLeft;
+  } */
+}
+/**
+** -- Desktop
+**/
+@media only screen and (min-width: 768px) {
+  body,
+  .App {
+    animation: 3s ease-out 0s 1 Ripple;
+  }
+  .jumbo {
+    padding-bottom: 100px;
+    background-color: #fffffd;
+  }
+  .nav {
+    background-color: #fbf59b;
+  }
+  .SyrupUL {
+  }
+  .syrupLI {
+  }
 }
