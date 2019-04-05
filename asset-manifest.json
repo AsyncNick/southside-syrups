@@ -1,13 +1,13 @@
 {
-  "main.css": "/southside-syrups/static/css/main.39aaf23d.chunk.css",
-  "main.js": "/southside-syrups/static/js/main.d54ef180.chunk.js",
-  "main.js.map": "/southside-syrups/static/js/main.d54ef180.chunk.js.map",
+  "main.css": "/southside-syrups/static/css/main.7a121022.chunk.css",
+  "main.js": "/southside-syrups/static/js/main.f5ad438a.chunk.js",
+  "main.js.map": "/southside-syrups/static/js/main.f5ad438a.chunk.js.map",
   "runtime~main.js": "/southside-syrups/static/js/runtime~main.61c4019c.js",
   "runtime~main.js.map": "/southside-syrups/static/js/runtime~main.61c4019c.js.map",
-  "static/js/2.66833f9f.chunk.js": "/southside-syrups/static/js/2.66833f9f.chunk.js",
-  "static/js/2.66833f9f.chunk.js.map": "/southside-syrups/static/js/2.66833f9f.chunk.js.map",
+  "static/js/2.8e30fbb0.chunk.js": "/southside-syrups/static/js/2.8e30fbb0.chunk.js",
+  "static/js/2.8e30fbb0.chunk.js.map": "/southside-syrups/static/js/2.8e30fbb0.chunk.js.map",
   "index.html": "/southside-syrups/index.html",
-  "precache-manifest.fac342a99e82c1370b0864c4920a57ef.js": "/southside-syrups/precache-manifest.fac342a99e82c1370b0864c4920a57ef.js",
+  "precache-manifest.36a7d11aa625cee936edb04a5090afa7.js": "/southside-syrups/precache-manifest.36a7d11aa625cee936edb04a5090afa7.js",
   "service-worker.js": "/southside-syrups/service-worker.js",
-  "static/css/main.39aaf23d.chunk.css.map": "/southside-syrups/static/css/main.39aaf23d.chunk.css.map"
+  "static/css/main.7a121022.chunk.css.map": "/southside-syrups/static/css/main.7a121022.chunk.css.map"
 }
